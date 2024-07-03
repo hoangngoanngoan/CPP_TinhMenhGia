@@ -10,13 +10,12 @@ int main()
     so_to = 0;
     cout << "Nhap so tien can rut. "; cin >> sotien;
     int menhgia[8] = { 500, 200, 100, 50, 20, 10, 5 ,1 };
-    so_to = sotien / menhgia[0];
-    cout << "So to menh gia " << menhgia[0] << ": " << sotien / menhgia[0] << endl;
-    sotien = sotien - menhgia[0] * so_to;    
-    for (int i = 1; i < 8; i++) {
+    
+        
+    for (int i = 0; i < 8; i++) {
         if (sotien >= menhgia[i]) {
             so_to = so_to + (sotien / menhgia[i]);
-            cout << "So to menh gia " << menhgia[i] << ": " << sotien / menhgia[i] << endl;
+            cout << "So to menh gia " << menhgia[i] << " : " << sotien / menhgia[i] << endl;
             sotien = sotien - menhgia[i] * so_to;
         }
     }
